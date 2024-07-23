@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 const paragraphs = [
-  `El 5 de octubre de 2013, llegaba una nueva alegría a la familia: Nacía Vera. La lejanía nos consternaba, pero los detalles que con frecuencia nos hacía llegar su papá, nos acercaban a los hechos y así como es junio mes de seis celebraciones de nacimientos, octubre lo es para tres: Dago, Vera y Luna.`,
+  `El 5 de octubre de 2012, llegaba una nueva alegría a la familia: Nacía Vera. La lejanía nos consternaba, pero los detalles que con frecuencia nos hacía llegar su papá, nos acercaban a los hechos y así como es junio mes de seis celebraciones de nacimientos, octubre lo es para tres: Dago, Vera y Luna.`,
   `Muy pronto las fotos y los videos nos actualizaban. Es el caso de una toma que hiciera Lester junto a Damarys cuando la niña estaba de meses y empezaba a gorjear, momento en el que él le dice vamos a darle un grito a los abuelos, y como si lo hubiera entendido gritó como para que la oyéramos. Nos reímos mucho y, sobre todo, le dimos chucho a Gabi y Marcos, con lo que hizo su prima. `,
   `Cumplidos los dos años, nos visitaron durante una semana. Fueron días inolvidables. Cuando llegaron yo cargué a Vera y entré a la casa. Era admirable como intentaba ubicarse, mirándolo todo. Enseguida Marcos y Gabi se encargaron de ella.`,
   `Esa noche, un poco tarde ya, le propusimos acostarnos, pues los padres salieron a hacer visitas. Mientras la mimábamos y hablábamos, nos pidió: “Our de tataito”. Se lo tradujimos a idiomas insospechados y no dábamos con lo que quería. Cada vez la solicitud se hacía más seguida y fuerte. Qué hacemos, habrá que localizar a Lester; de pronto Mely tuvo uno de sus momentos lúcidos (…) claro; lo que quiere es Yougur de Platanito que ellos trajeron. ¡Ñoooo!`,
