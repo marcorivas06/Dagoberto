@@ -24,7 +24,7 @@ function Home2() {
               I have found so many writings to many family members that I feel they should be shared with those who were for.
               <br />
               <br />
-              Everything you will read in the book tab was written him!!
+              Everything you will read in the book tab was written by him!!
               <br />
               <br />
             </p>

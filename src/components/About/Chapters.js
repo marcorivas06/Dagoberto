@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Celiaynono } from "../../data/Celiaynono";
 import { Conclusiones } from "../../data/Conclusiones";
@@ -14,6 +14,8 @@ import { Gabi } from "../../data/Gabi";
 
 function Chapters() {
   const [selectedChapter, setSelectedChapter] = useState(null);
+  const chapterRefs = useRef(new Array()); // Create an array of refs
+
   const chapters = [
     { name: "Introduccion", renderComponent: <Introduccion /> },
     { name: "Dagmelis", renderComponent: <Dagmelys /> },
@@ -27,6 +29,13 @@ function Chapters() {
     { name: "Olga Quiquito", renderComponent: <Olgayquiquito /> },
     { name: "Conclusiones", renderComponent: <Conclusiones /> },
   ];
+
+  useEffect(() => {
+    if (selectedChapter) {
+      // Scroll the selected chapter into view
+      chapterRefs.current[selectedChapter.name].scrollIntoView({ behavior: "smooth" });
+    }
+  }, [selectedChapter]);
 
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
@@ -42,11 +51,11 @@ function Chapters() {
           <p>{chapter.name}</p>
         </Col>
       ))}
-      {selectedChapter && (
-        <Col xs={12} md={12} style={{ marginTop: "20px" }}>
-          {selectedChapter.renderComponent}
-        </Col>
-      )}
+      {chapters.map((chapter, index) => (
+        <div key={index} ref={el => chapterRefs.current[chapter.name] = el} style={{ display: selectedChapter?.name === chapter.name ? "block" : "none" }}>
+          {chapter.renderComponent}
+        </div>
+      ))}
     </Row>
   );
 }
