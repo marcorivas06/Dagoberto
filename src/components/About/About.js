@@ -1,13 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Chapters from "./Chapters";
 import Aboutcard from "./AboutCard";
 import aboutDago from "../../Assets/about.JPG";
 import Toolstack from "./Toolstack";
 
 function About() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [password, setPassword] = useState("");
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleLogin = () => {
+    if (password === "1025") {
+      setIsAuthenticated(true);
+    } else {
+      alert("Incorrect password");
+    }
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div>
+          <input
+            type="password"
+            placeholder="Enter password"
+            value={password}
+            onChange={handlePasswordChange}
+            className="form-control"
+          />
+          <button onClick={handleLogin} className="btn btn-primary mt-2">
+            Submit
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <Container fluid className="about-section">
       <Particle />
