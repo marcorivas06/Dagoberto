@@ -8,33 +8,36 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+          Este breve recuento asume una etapa en la vida de una
+          familia que fue creciendo a partir de dos nacimientos          
+          curiosos en sus fechas, razón esencial tenida en cuenta
+          para de la forma más amena posible, entretejer sucesos
+          y consideraciones que caracterizan a unos y a otros, pero
+          a todos con el  <span className="purple"> cariño </span> de bisabuelos, abuelos, padres e 
+          hijos.  
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+            <ImPointRight /> <span className="purple"> Idea Original: </span> 
+            <br/>
+            Un abuelo.  
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+            <ImPointRight /><span className="purple">Redacción original:</span> 
+            <br/>
+            Un abuelo.
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+            <ImPointRight /> <span className="purple">Colaboradores:</span>
+            <br/>
+            Personajes reales. 
             </li>
-          </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+            <li className="about-activity">
+            <ImPointRight /> <span className="purple">Fuentes:</span>
+            <br/>
+            Vivencias, conversaciones espontaneas, comentarios, fechas.
+            </li>
+          </ul>          
         </blockquote>
       </Card.Body>
     </Card>
